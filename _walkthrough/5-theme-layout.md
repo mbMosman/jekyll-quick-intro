@@ -33,9 +33,8 @@ The `image.html` include contains the following:
 {% endhighlight %}
 
 It is used in pages by adding an include tag:
-```
-{% include image.html path="/about-page-url.png" text="Image of About page showing URL." %}
-```  
+{% include image.html path="/image-include.png" text="Image of the image include." %}
+
 
 The `path` and `text` are input variables on the include and are referenced as `include.path` and `include.text` (inside the double curly brackets).
 
