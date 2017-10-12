@@ -1,0 +1,41 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: "Jekyll: A Quick Intro"
+author: Mary Mosman
+email: mbmosman@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Jekyll is used to build this site! View the source on GitHub: [jekyll-quick-intro](https://github.com/mbmosman/jekyll-quick-intro).
+baseurl: "/jekyll-quick-intro" # the subpath of your site, e.g. /blog
+url: "mbmosman.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  mbmosman
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  walkthrough:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: walkthrough
+    values:
+      layout: walkthrough

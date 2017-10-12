@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="page-nav">
+{% if page.previous %}
+  <a class="prev-link" href="{{ site.baseurl }}/walkthrough/{{page.previous_page}}"><< Previous</a>
+{% endif %}
+{% if page.next %}
+  <a class="next-link" href="{{ site.baseurl }}/walkthrough/{{page.next_page}}">Next >></a>
+{% endif %}
+</div>

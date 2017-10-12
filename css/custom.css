@@ -1,0 +1,14 @@
+.next-link {
+  float: right;
+}
+
+img {
+  border: 1px solid #666;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.img-container {
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
